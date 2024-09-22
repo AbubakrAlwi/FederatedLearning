@@ -7,7 +7,7 @@ This project implements a Federated learning using the federated learning librar
     sudo apt-get update && sudo apt-get upgrade -y
  ```
  Set Up a Conda Virtual Environment
-   1. install conda For Raspberry Pi OS 64-bit :
+   1. install conda For Raspberry Pi OS 64-bit:
   ```shell
     mkdir -p ~/miniconda3
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda3/miniconda.sh
@@ -18,16 +18,16 @@ This project implements a Federated learning using the federated learning librar
  ```shell
     ~/miniconda3/bin/conda init bash 
  ```
-  OR if you using zsh bash :
+  OR if you using zsh bash:
   
   ```shell
    ~/miniconda3/bin/conda init zsh 
  ```
-  3. update Conda
+  3. update Conda :
   ```shell
-   conda update -n base -c defaults conda
+   conda update -n base -c defaults conda:
   ```
-  5. Create then activate the new environment :
+  5. Create then activate the new environment:
   ```shell 
    conda create -n env_name  python=3.9
    conda activate env_name
