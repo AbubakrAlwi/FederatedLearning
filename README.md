@@ -39,10 +39,12 @@ This project implements a Federated learning using the federated learning librar
 Then, to verify that everything works correctly you can run the following command:
 
 ```shell
-python3 -c "import flwr"
+python -c "import flwr;print(flwr.__version__)"
 ```
 
 If you don't see any errors you're good to go!
+
+Note : For the server side we apply the same steps .
 
 ______________________________________________________________________
 ## Run Federated Learning with PyTorch and Flower
