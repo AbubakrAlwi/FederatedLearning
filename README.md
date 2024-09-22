@@ -23,18 +23,52 @@ This project implements a Federated learning using the federated learning librar
   ```shell
    ~/miniconda3/bin/conda init zsh 
  ```
-
-  3. create virtual environment:
+  3. update Conda
   ```shell
-   conda update -n base -c defaults conda  
+   conda update -n base -c defaults conda
+  ```
+  5. Create then activate the new environment :
+  ```shell 
    conda create -n env_name  python=3.9
    conda activate env_name
  ```
- 4. Install Required Libraries:
+ 6. Install Required Libraries:
   ```shell
    pip install -r requirements.txt
  ```
+Then, to verify that everything works correctly you can run the following command:
 
+```shell
+python3 -c "import flwr"
+```
 
+If you don't see any errors you're good to go!
+
+______________________________________________________________________
+## Run Federated Learning with PyTorch and Flower
+
+Afterwards you are ready to start the Flower server as well as the clients. You can simply start the server in a terminal as follows:
+
+```shell
+python3 server.py
+```
+Now you are ready to start the Flower clients which will participate in the learning. We need to specify the partition id to
+use different partitions of the data on different nodes.  To do so simply open two more terminal windows and run the
+following commands.
+Now you are ready to start the Flower clients which will participate in the learning. We need to specify the partition id to
+use different partitions of the data on different nodes.  To do so simply open two more terminal windows and run the
+following commands.
+
+Start client 1 in the first terminal:
+
+```shell
+python3 client.py --partition-id 0
+```
+
+Start client 2 in the second terminal:
+
+```shell
+python3 client.py --partition-id 1
+```
 
 
