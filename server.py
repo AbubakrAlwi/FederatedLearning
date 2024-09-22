@@ -35,7 +35,7 @@ if __name__ == "__main__":
     from flwr.server import start_server
 
     start_server(
-        server_address="10.10.0.101:8080",
+        server_address="0.0.0.0:8080",
         config=config,
         strategy=strategy,
     )
