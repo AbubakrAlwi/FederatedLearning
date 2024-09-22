@@ -69,8 +69,7 @@ def train(net, trainloader, epochs):
             optimizer.zero_grad()
             criterion(net(images.to(DEVICE)), labels.to(DEVICE)).backward()
             optimizer.step()
- #end tracking
-  tracker.stop()
+            
      #end tracking
     tracker.stop()
 
