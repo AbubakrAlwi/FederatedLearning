@@ -29,14 +29,19 @@ This project implements a Federated learning using the federated learning librar
  ```
   4. update Conda :
   ```shell
-   conda update -n base -c defaults conda:
+   conda update -n base -c defaults conda
   ```
   5. Create then activate the new environment:
   ```shell 
    conda create -n env_name  python=3.9
    conda activate env_name
  ```
- 6. Install Required Libraries:
+ 6. Update pip :
+    Ensure you have the latest version of pip
+   ```shell 
+    pip install --upgrade pip
+   ```
+ 7. Install Required Libraries:
   ```shell
    pip install -r requirements.txt
  ```
