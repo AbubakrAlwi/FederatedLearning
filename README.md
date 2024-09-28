@@ -14,7 +14,11 @@ This project implements a Federated learning using the federated learning librar
     bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
     rm ~/miniconda3/miniconda.sh  
  ```
-  2. Activate Conda:
+  2. Verify the Installation
+  ```shell
+ conda --version
+ ```
+  3. Activate Conda:
  ```shell
     ~/miniconda3/bin/conda init bash 
  ```
@@ -23,7 +27,7 @@ This project implements a Federated learning using the federated learning librar
   ```shell
    ~/miniconda3/bin/conda init zsh 
  ```
-  3. update Conda :
+  4. update Conda :
   ```shell
    conda update -n base -c defaults conda:
   ```
